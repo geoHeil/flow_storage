@@ -1,5 +1,6 @@
 flows:
-  32f653c2-64c5-4715-98a7-8c2ef55eb85a: {ver: 6, file: bitcoin.snapshot, comments: change
-      data types, author: anonymous, created: 1592482851900, flowName: bitcoin, flowDesc: ''}
+  32f653c2-64c5-4715-98a7-8c2ef55eb85a: {ver: 7, file: bitcoin.snapshot, comments: password
+      must be entered manually, author: anonymous, created: 1592483939433, flowName: bitcoin,
+    flowDesc: ''}
 layoutVer: 1
 bucketId: 9029a458-96bb-484f-854b-bf34b0c5b4da
