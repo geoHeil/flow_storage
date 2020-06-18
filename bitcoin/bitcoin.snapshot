@@ -4,12 +4,7 @@
   },
   "content" : {
     "flowSnapshot" : {
-      "externalControllerServices" : {
-        "febf57ed-79c8-39ac-ad41-42ec1540aaa8" : {
-          "identifier" : "febf57ed-79c8-39ac-ad41-42ec1540aaa8",
-          "name" : "StandardSSLContextService"
-        }
-      },
+      "externalControllerServices" : { },
       "flowContents" : {
         "comments" : "",
         "componentType" : "PROCESS_GROUP",
@@ -20,13 +15,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+            "groupId" : "0f54ec14-7510-339f-bbc2-29465b88612a",
             "id" : "c0002c6a-c10d-39d4-882d-a42b22ac5f9b",
             "name" : "JoltTransformJSON",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+          "groupIdentifier" : "0f54ec14-7510-339f-bbc2-29465b88612a",
           "identifier" : "e22e10d6-47e7-3d9a-aae8-384130457f34",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -37,7 +32,7 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+            "groupId" : "0f54ec14-7510-339f-bbc2-29465b88612a",
             "id" : "498dba89-2f19-3e5f-9782-b206f9b269da",
             "name" : "GetHTTP",
             "type" : "PROCESSOR"
@@ -50,13 +45,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+            "groupId" : "0f54ec14-7510-339f-bbc2-29465b88612a",
             "id" : "ecd5b0e3-9318-3523-8983-b16edd80beb5",
             "name" : "EvaluateJsonPath",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+          "groupIdentifier" : "0f54ec14-7510-339f-bbc2-29465b88612a",
           "identifier" : "cdc761a7-1d93-3ce9-9334-2d2c1e1c0ae1",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -67,7 +62,7 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+            "groupId" : "0f54ec14-7510-339f-bbc2-29465b88612a",
             "id" : "c0002c6a-c10d-39d4-882d-a42b22ac5f9b",
             "name" : "JoltTransformJSON",
             "type" : "PROCESSOR"
@@ -80,43 +75,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "42c7c173-7373-3574-82d2-70346d1f16b7",
-            "id" : "ea9ad409-6b85-3adf-ba7d-f07b3edcb35b",
-            "name" : "JoltTransformJSON",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
-          "identifier" : "19376a11-b19c-3f24-b0ca-be111960f755",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "matched" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "42c7c173-7373-3574-82d2-70346d1f16b7",
-            "id" : "71fd2c93-7bff-3fe5-b3c4-b80652319162",
-            "name" : "EvaluateJsonPath",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+            "groupId" : "0f54ec14-7510-339f-bbc2-29465b88612a",
             "id" : "0aead36e-9aa6-3c25-a64c-a38eab2a494b",
             "name" : "PutElasticsearchHttp",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+          "groupIdentifier" : "0f54ec14-7510-339f-bbc2-29465b88612a",
           "identifier" : "304d4fc7-a7ed-3497-aed4-490144e5359b",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -127,7 +92,7 @@
           "selectedRelationships" : [ "matched" ],
           "source" : {
             "comments" : "",
-            "groupId" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+            "groupId" : "0f54ec14-7510-339f-bbc2-29465b88612a",
             "id" : "ecd5b0e3-9318-3523-8983-b16edd80beb5",
             "name" : "EvaluateJsonPath",
             "type" : "PROCESSOR"
@@ -140,14 +105,14 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "42c7c173-7373-3574-82d2-70346d1f16b7",
-            "id" : "82240366-b357-3f0e-afd6-55ebfad8db6a",
-            "name" : "PostHTTP",
+            "groupId" : "0f54ec14-7510-339f-bbc2-29465b88612a",
+            "id" : "ea9ad409-6b85-3adf-ba7d-f07b3edcb35b",
+            "name" : "JoltTransformJSON",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
-          "identifier" : "a89a423d-57b2-3513-9880-485f2c9df9f4",
+          "groupIdentifier" : "0f54ec14-7510-339f-bbc2-29465b88612a",
+          "identifier" : "19376a11-b19c-3f24-b0ca-be111960f755",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -157,8 +122,8 @@
           "selectedRelationships" : [ "matched" ],
           "source" : {
             "comments" : "",
-            "groupId" : "42c7c173-7373-3574-82d2-70346d1f16b7",
-            "id" : "ecd5b0e3-9318-3523-8983-b16edd80beb5",
+            "groupId" : "0f54ec14-7510-339f-bbc2-29465b88612a",
+            "id" : "71fd2c93-7bff-3fe5-b3c4-b80652319162",
             "name" : "EvaluateJsonPath",
             "type" : "PROCESSOR"
           },
@@ -170,13 +135,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+            "groupId" : "0f54ec14-7510-339f-bbc2-29465b88612a",
             "id" : "21bc3896-ebfa-3431-aa86-88b9953851a7",
             "name" : "PutElasticsearchHttp",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+          "groupIdentifier" : "0f54ec14-7510-339f-bbc2-29465b88612a",
           "identifier" : "e5d3b790-ca1a-30ea-878e-0d0b45dba4ca",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -187,7 +152,7 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+            "groupId" : "0f54ec14-7510-339f-bbc2-29465b88612a",
             "id" : "ea9ad409-6b85-3adf-ba7d-f07b3edcb35b",
             "name" : "JoltTransformJSON",
             "type" : "PROCESSOR"
@@ -200,14 +165,14 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "42c7c173-7373-3574-82d2-70346d1f16b7",
-            "id" : "5a83f0a6-c9cd-3613-8b0d-96c64c457461",
-            "name" : "PutElasticsearch5",
+            "groupId" : "0f54ec14-7510-339f-bbc2-29465b88612a",
+            "id" : "82240366-b357-3f0e-afd6-55ebfad8db6a",
+            "name" : "PostHTTP",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
-          "identifier" : "9515df2e-9477-3af6-8c90-cb48f688845d",
+          "groupIdentifier" : "0f54ec14-7510-339f-bbc2-29465b88612a",
+          "identifier" : "a89a423d-57b2-3513-9880-485f2c9df9f4",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -217,7 +182,7 @@
           "selectedRelationships" : [ "matched" ],
           "source" : {
             "comments" : "",
-            "groupId" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+            "groupId" : "0f54ec14-7510-339f-bbc2-29465b88612a",
             "id" : "ecd5b0e3-9318-3523-8983-b16edd80beb5",
             "name" : "EvaluateJsonPath",
             "type" : "PROCESSOR"
@@ -230,13 +195,43 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+            "groupId" : "0f54ec14-7510-339f-bbc2-29465b88612a",
+            "id" : "5a83f0a6-c9cd-3613-8b0d-96c64c457461",
+            "name" : "PutElasticsearch5",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "0f54ec14-7510-339f-bbc2-29465b88612a",
+          "identifier" : "9515df2e-9477-3af6-8c90-cb48f688845d",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "matched" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "0f54ec14-7510-339f-bbc2-29465b88612a",
+            "id" : "ecd5b0e3-9318-3523-8983-b16edd80beb5",
+            "name" : "EvaluateJsonPath",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "0f54ec14-7510-339f-bbc2-29465b88612a",
             "id" : "71fd2c93-7bff-3fe5-b3c4-b80652319162",
             "name" : "EvaluateJsonPath",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+          "groupIdentifier" : "0f54ec14-7510-339f-bbc2-29465b88612a",
           "identifier" : "a84fc835-25eb-3770-a693-1603541237a4",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -247,34 +242,102 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+            "groupId" : "0f54ec14-7510-339f-bbc2-29465b88612a",
             "id" : "498dba89-2f19-3e5f-9782-b206f9b269da",
             "name" : "GetHTTP",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
         } ],
-        "controllerServices" : [ ],
+        "controllerServices" : [ {
+          "bundle" : {
+            "artifact" : "nifi-ssl-context-service-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.11.4"
+          },
+          "comments" : "",
+          "componentType" : "CONTROLLER_SERVICE",
+          "controllerServiceApis" : [ {
+            "bundle" : {
+              "artifact" : "nifi-standard-services-api-nar",
+              "group" : "org.apache.nifi",
+              "version" : "1.11.4"
+            },
+            "type" : "org.apache.nifi.ssl.SSLContextService"
+          }, {
+            "bundle" : {
+              "artifact" : "nifi-standard-services-api-nar",
+              "group" : "org.apache.nifi",
+              "version" : "1.11.4"
+            },
+            "type" : "org.apache.nifi.ssl.RestrictedSSLContextService"
+          } ],
+          "groupIdentifier" : "0f54ec14-7510-339f-bbc2-29465b88612a",
+          "identifier" : "54d9586d-41ac-3008-b7ee-4813afb62d36",
+          "name" : "BitcoinStandardRestrictedSSLContextService",
+          "properties" : {
+            "Truststore Type" : "JKS",
+            "SSL Protocol" : "TLS",
+            "Truststore Filename" : "/usr/local/openjdk-8/lib/security/cacerts"
+          },
+          "propertyDescriptors" : {
+            "Truststore Type" : {
+              "displayName" : "Truststore Type",
+              "identifiesControllerService" : false,
+              "name" : "Truststore Type",
+              "sensitive" : false
+            },
+            "SSL Protocol" : {
+              "displayName" : "TLS Protocol",
+              "identifiesControllerService" : false,
+              "name" : "SSL Protocol",
+              "sensitive" : false
+            },
+            "Keystore Type" : {
+              "displayName" : "Keystore Type",
+              "identifiesControllerService" : false,
+              "name" : "Keystore Type",
+              "sensitive" : false
+            },
+            "Truststore Filename" : {
+              "displayName" : "Truststore Filename",
+              "identifiesControllerService" : false,
+              "name" : "Truststore Filename",
+              "sensitive" : false
+            },
+            "Keystore Password" : {
+              "displayName" : "Keystore Password",
+              "identifiesControllerService" : false,
+              "name" : "Keystore Password",
+              "sensitive" : true
+            },
+            "key-password" : {
+              "displayName" : "Key Password",
+              "identifiesControllerService" : false,
+              "name" : "key-password",
+              "sensitive" : true
+            },
+            "Truststore Password" : {
+              "displayName" : "Truststore Password",
+              "identifiesControllerService" : false,
+              "name" : "Truststore Password",
+              "sensitive" : true
+            },
+            "Keystore Filename" : {
+              "displayName" : "Keystore Filename",
+              "identifiesControllerService" : false,
+              "name" : "Keystore Filename",
+              "sensitive" : false
+            }
+          },
+          "type" : "org.apache.nifi.ssl.StandardRestrictedSSLContextService"
+        } ],
         "funnels" : [ ],
-        "identifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+        "identifier" : "0f54ec14-7510-339f-bbc2-29465b88612a",
         "inputPorts" : [ ],
         "labels" : [ {
           "componentType" : "LABEL",
-          "groupIdentifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
-          "height" : 40.0,
-          "identifier" : "bb819e6a-49e6-3554-b8d7-c74bc1945b5d",
-          "label" : "most generic way of interaction",
-          "position" : {
-            "x" : 608.0,
-            "y" : 1048.0
-          },
-          "style" : {
-            "font-size" : "12px"
-          },
-          "width" : 208.0
-        }, {
-          "componentType" : "LABEL",
-          "groupIdentifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+          "groupIdentifier" : "0f54ec14-7510-339f-bbc2-29465b88612a",
           "height" : 704.0,
           "identifier" : "34cd4a73-51ed-38b7-8e2e-9f05dd6105d8",
           "label" : "This is writing epoch timestamps which are not \ninterpretable by elastic (by default)",
@@ -288,7 +351,21 @@
           "width" : 816.0
         }, {
           "componentType" : "LABEL",
-          "groupIdentifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+          "groupIdentifier" : "0f54ec14-7510-339f-bbc2-29465b88612a",
+          "height" : 40.0,
+          "identifier" : "bb819e6a-49e6-3554-b8d7-c74bc1945b5d",
+          "label" : "most generic way of interaction",
+          "position" : {
+            "x" : 608.0,
+            "y" : 1048.0
+          },
+          "style" : {
+            "font-size" : "12px"
+          },
+          "width" : 208.0
+        }, {
+          "componentType" : "LABEL",
+          "groupIdentifier" : "0f54ec14-7510-339f-bbc2-29465b88612a",
           "height" : 56.0,
           "identifier" : "3eac928b-12cc-3a9e-be84-1b30a6749843",
           "label" : "utillizes binary protocol.\n\nNot adapted for ELK 7.x",
@@ -302,7 +379,7 @@
           "width" : 176.0
         }, {
           "componentType" : "LABEL",
-          "groupIdentifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+          "groupIdentifier" : "0f54ec14-7510-339f-bbc2-29465b88612a",
           "height" : 712.0,
           "identifier" : "da0530c8-8cba-3f81-a5f3-ae9a12598432",
           "label" : "Here, we transform the epoch timestamp directly at the source in NiFi.\nAlso, we will keep more columns!  (up to you to change the JOLT)",
@@ -318,8 +395,8 @@
         "name" : "bitcoin",
         "outputPorts" : [ ],
         "position" : {
-          "x" : 64.0,
-          "y" : 0.0
+          "x" : 359.0,
+          "y" : 122.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -334,7 +411,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+          "groupIdentifier" : "0f54ec14-7510-339f-bbc2-29465b88612a",
           "identifier" : "c0002c6a-c10d-39d4-882d-a42b22ac5f9b",
           "name" : "JoltTransformJSON",
           "penaltyDuration" : "30 sec",
@@ -405,7 +482,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+          "groupIdentifier" : "0f54ec14-7510-339f-bbc2-29465b88612a",
           "identifier" : "ecd5b0e3-9318-3523-8983-b16edd80beb5",
           "name" : "EvaluateJsonPath",
           "penaltyDuration" : "30 sec",
@@ -471,7 +548,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+          "groupIdentifier" : "0f54ec14-7510-339f-bbc2-29465b88612a",
           "identifier" : "21bc3896-ebfa-3431-aa86-88b9953851a7",
           "name" : "PutElasticsearchHttp",
           "penaltyDuration" : "30 sec",
@@ -613,7 +690,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+          "groupIdentifier" : "0f54ec14-7510-339f-bbc2-29465b88612a",
           "identifier" : "71fd2c93-7bff-3fe5-b3c4-b80652319162",
           "name" : "EvaluateJsonPath",
           "penaltyDuration" : "30 sec",
@@ -679,7 +756,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+          "groupIdentifier" : "0f54ec14-7510-339f-bbc2-29465b88612a",
           "identifier" : "82240366-b357-3f0e-afd6-55ebfad8db6a",
           "name" : "PostHTTP",
           "penaltyDuration" : "30 sec",
@@ -820,7 +897,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+          "groupIdentifier" : "0f54ec14-7510-339f-bbc2-29465b88612a",
           "identifier" : "498dba89-2f19-3e5f-9782-b206f9b269da",
           "name" : "GetHTTP",
           "penaltyDuration" : "30 sec",
@@ -834,7 +911,7 @@
             "URL" : "https://www.bitstamp.net/api/v2/ticker/btcusd/",
             "Connection Timeout" : "30 sec",
             "Data Timeout" : "30 sec",
-            "SSL Context Service" : "febf57ed-79c8-39ac-ad41-42ec1540aaa8",
+            "SSL Context Service" : "54d9586d-41ac-3008-b7ee-4813afb62d36",
             "Follow Redirects" : "false"
           },
           "propertyDescriptors" : {
@@ -942,7 +1019,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+          "groupIdentifier" : "0f54ec14-7510-339f-bbc2-29465b88612a",
           "identifier" : "ea9ad409-6b85-3adf-ba7d-f07b3edcb35b",
           "name" : "JoltTransformJSON",
           "penaltyDuration" : "30 sec",
@@ -1013,7 +1090,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+          "groupIdentifier" : "0f54ec14-7510-339f-bbc2-29465b88612a",
           "identifier" : "5a83f0a6-c9cd-3613-8b0d-96c64c457461",
           "name" : "PutElasticsearch5",
           "penaltyDuration" : "30 sec",
@@ -1138,7 +1215,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+          "groupIdentifier" : "0f54ec14-7510-339f-bbc2-29465b88612a",
           "identifier" : "0aead36e-9aa6-3c25-a64c-a38eab2a494b",
           "name" : "PutElasticsearchHttp",
           "penaltyDuration" : "30 sec",

@@ -1,6 +1,6 @@
 flows:
-  32f653c2-64c5-4715-98a7-8c2ef55eb85a: {ver: 2, file: bitcoin.snapshot, comments: both
-      cleaned epoch and regular flow to elastic, author: anonymous, created: 1592466592286,
-    flowName: bitcoin, flowDesc: ''}
+  32f653c2-64c5-4715-98a7-8c2ef55eb85a: {ver: 3, file: bitcoin.snapshot, comments: fixup
+      SSL context service, author: anonymous, created: 1592467594206, flowName: bitcoin,
+    flowDesc: ''}
 layoutVer: 1
 bucketId: 9029a458-96bb-484f-854b-bf34b0c5b4da
