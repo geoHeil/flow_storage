@@ -1,6 +1,6 @@
 flows:
-  32f653c2-64c5-4715-98a7-8c2ef55eb85a: {ver: 4, file: bitcoin.snapshot, comments: 'hopefully,
-      all the controller services are included. AVRO path as well', author: anonymous,
-    created: 1592480547544, flowName: bitcoin, flowDesc: ''}
+  32f653c2-64c5-4715-98a7-8c2ef55eb85a: {ver: 5, file: bitcoin.snapshot, comments: 'hopefully,
+      the password is now synced as well', author: anonymous, created: 1592482112148,
+    flowName: bitcoin, flowDesc: ''}
 layoutVer: 1
 bucketId: 9029a458-96bb-484f-854b-bf34b0c5b4da
