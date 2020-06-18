@@ -81,6 +81,36 @@
           "destination" : {
             "comments" : "",
             "groupId" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+            "id" : "ea9ad409-6b85-3adf-ba7d-f07b3edcb35b",
+            "name" : "JoltTransformJSON",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+          "identifier" : "19376a11-b19c-3f24-b0ca-be111960f755",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "matched" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+            "id" : "71fd2c93-7bff-3fe5-b3c4-b80652319162",
+            "name" : "EvaluateJsonPath",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "42c7c173-7373-3574-82d2-70346d1f16b7",
             "id" : "0aead36e-9aa6-3c25-a64c-a38eab2a494b",
             "name" : "PutElasticsearchHttp",
             "type" : "PROCESSOR"
@@ -141,6 +171,36 @@
           "destination" : {
             "comments" : "",
             "groupId" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+            "id" : "21bc3896-ebfa-3431-aa86-88b9953851a7",
+            "name" : "PutElasticsearchHttp",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+          "identifier" : "e5d3b790-ca1a-30ea-878e-0d0b45dba4ca",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+            "id" : "ea9ad409-6b85-3adf-ba7d-f07b3edcb35b",
+            "name" : "JoltTransformJSON",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "42c7c173-7373-3574-82d2-70346d1f16b7",
             "id" : "5a83f0a6-c9cd-3613-8b0d-96c64c457461",
             "name" : "PutElasticsearch5",
             "type" : "PROCESSOR"
@@ -163,12 +223,98 @@
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+            "id" : "71fd2c93-7bff-3fe5-b3c4-b80652319162",
+            "name" : "EvaluateJsonPath",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+          "identifier" : "a84fc835-25eb-3770-a693-1603541237a4",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+            "id" : "498dba89-2f19-3e5f-9782-b206f9b269da",
+            "name" : "GetHTTP",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
         } ],
         "controllerServices" : [ ],
         "funnels" : [ ],
         "identifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
         "inputPorts" : [ ],
-        "labels" : [ ],
+        "labels" : [ {
+          "componentType" : "LABEL",
+          "groupIdentifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+          "height" : 40.0,
+          "identifier" : "bb819e6a-49e6-3554-b8d7-c74bc1945b5d",
+          "label" : "most generic way of interaction",
+          "position" : {
+            "x" : 608.0,
+            "y" : 1048.0
+          },
+          "style" : {
+            "font-size" : "12px"
+          },
+          "width" : 208.0
+        }, {
+          "componentType" : "LABEL",
+          "groupIdentifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+          "height" : 704.0,
+          "identifier" : "34cd4a73-51ed-38b7-8e2e-9f05dd6105d8",
+          "label" : "This is writing epoch timestamps which are not \ninterpretable by elastic (by default)",
+          "position" : {
+            "x" : 864.0,
+            "y" : 368.0
+          },
+          "style" : {
+            "font-size" : "12px"
+          },
+          "width" : 816.0
+        }, {
+          "componentType" : "LABEL",
+          "groupIdentifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+          "height" : 56.0,
+          "identifier" : "3eac928b-12cc-3a9e-be84-1b30a6749843",
+          "label" : "utillizes binary protocol.\n\nNot adapted for ELK 7.x",
+          "position" : {
+            "x" : 1656.0,
+            "y" : 1040.0
+          },
+          "style" : {
+            "font-size" : "12px"
+          },
+          "width" : 176.0
+        }, {
+          "componentType" : "LABEL",
+          "groupIdentifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+          "height" : 712.0,
+          "identifier" : "da0530c8-8cba-3f81-a5f3-ae9a12598432",
+          "label" : "Here, we transform the epoch timestamp directly at the source in NiFi.\nAlso, we will keep more columns!  (up to you to change the JOLT)",
+          "position" : {
+            "x" : 2032.0,
+            "y" : 352.0
+          },
+          "style" : {
+            "font-size" : "12px"
+          },
+          "width" : 464.0
+        } ],
         "name" : "bitcoin",
         "outputPorts" : [ ],
         "position" : {
@@ -266,6 +412,214 @@
           "position" : {
             "x" : 1128.0,
             "y" : 656.0
+          },
+          "properties" : {
+            "Destination" : "flowfile-attribute",
+            "Return Type" : "auto-detect",
+            "Null Value Representation" : "empty string",
+            "Path Not Found Behavior" : "ignore",
+            "timestamp" : "$.timestamp"
+          },
+          "propertyDescriptors" : {
+            "Destination" : {
+              "displayName" : "Destination",
+              "identifiesControllerService" : false,
+              "name" : "Destination",
+              "sensitive" : false
+            },
+            "Return Type" : {
+              "displayName" : "Return Type",
+              "identifiesControllerService" : false,
+              "name" : "Return Type",
+              "sensitive" : false
+            },
+            "Null Value Representation" : {
+              "displayName" : "Null Value Representation",
+              "identifiesControllerService" : false,
+              "name" : "Null Value Representation",
+              "sensitive" : false
+            },
+            "Path Not Found Behavior" : {
+              "displayName" : "Path Not Found Behavior",
+              "identifiesControllerService" : false,
+              "name" : "Path Not Found Behavior",
+              "sensitive" : false
+            },
+            "timestamp" : {
+              "displayName" : "timestamp",
+              "identifiesControllerService" : false,
+              "name" : "timestamp",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.EvaluateJsonPath",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ "success", "failure", "retry" ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-elasticsearch-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.11.4"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+          "identifier" : "21bc3896-ebfa-3431-aa86-88b9953851a7",
+          "name" : "PutElasticsearchHttp",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 2056.0,
+            "y" : 904.0
+          },
+          "properties" : {
+            "elasticsearch-http-response-timeout" : "15 secs",
+            "put-es-id-attr" : "uuid",
+            "put-es-type" : "_doc",
+            "put-es-index" : "fixed-bitstamp-${timestamp:multiply(1000):format(\"yyyy-MM-dd\")}",
+            "elasticsearch-http-url" : "http://elasticsearch:9200",
+            "put-es-batch-size" : "100",
+            "elasticsearch-http-connect-timeout" : "5 secs",
+            "put-es-index-op" : "index",
+            "Character Set" : "UTF-8"
+          },
+          "propertyDescriptors" : {
+            "elasticsearch-http-response-timeout" : {
+              "displayName" : "Response Timeout",
+              "identifiesControllerService" : false,
+              "name" : "elasticsearch-http-response-timeout",
+              "sensitive" : false
+            },
+            "put-es-id-attr" : {
+              "displayName" : "Identifier Attribute",
+              "identifiesControllerService" : false,
+              "name" : "put-es-id-attr",
+              "sensitive" : false
+            },
+            "put-es-type" : {
+              "displayName" : "Type",
+              "identifiesControllerService" : false,
+              "name" : "put-es-type",
+              "sensitive" : false
+            },
+            "put-es-index" : {
+              "displayName" : "Index",
+              "identifiesControllerService" : false,
+              "name" : "put-es-index",
+              "sensitive" : false
+            },
+            "proxy-configuration-service" : {
+              "displayName" : "Proxy Configuration Service",
+              "identifiesControllerService" : true,
+              "name" : "proxy-configuration-service",
+              "sensitive" : false
+            },
+            "elasticsearch-http-url" : {
+              "displayName" : "Elasticsearch URL",
+              "identifiesControllerService" : false,
+              "name" : "elasticsearch-http-url",
+              "sensitive" : false
+            },
+            "put-es-batch-size" : {
+              "displayName" : "Batch Size",
+              "identifiesControllerService" : false,
+              "name" : "put-es-batch-size",
+              "sensitive" : false
+            },
+            "SSL Context Service" : {
+              "displayName" : "SSL Context Service",
+              "identifiesControllerService" : true,
+              "name" : "SSL Context Service",
+              "sensitive" : false
+            },
+            "elasticsearch-http-connect-timeout" : {
+              "displayName" : "Connection Timeout",
+              "identifiesControllerService" : false,
+              "name" : "elasticsearch-http-connect-timeout",
+              "sensitive" : false
+            },
+            "Username" : {
+              "displayName" : "Username",
+              "identifiesControllerService" : false,
+              "name" : "Username",
+              "sensitive" : false
+            },
+            "put-es-index-op" : {
+              "displayName" : "Index Operation",
+              "identifiesControllerService" : false,
+              "name" : "put-es-index-op",
+              "sensitive" : false
+            },
+            "elasticsearch-http-proxy-host" : {
+              "displayName" : "Proxy Host",
+              "identifiesControllerService" : false,
+              "name" : "elasticsearch-http-proxy-host",
+              "sensitive" : false
+            },
+            "proxy-username" : {
+              "displayName" : "Proxy Username",
+              "identifiesControllerService" : false,
+              "name" : "proxy-username",
+              "sensitive" : false
+            },
+            "proxy-password" : {
+              "displayName" : "Proxy Password",
+              "identifiesControllerService" : false,
+              "name" : "proxy-password",
+              "sensitive" : true
+            },
+            "elasticsearch-http-proxy-port" : {
+              "displayName" : "Proxy Port",
+              "identifiesControllerService" : false,
+              "name" : "elasticsearch-http-proxy-port",
+              "sensitive" : false
+            },
+            "Character Set" : {
+              "displayName" : "Character Set",
+              "identifiesControllerService" : false,
+              "name" : "Character Set",
+              "sensitive" : false
+            },
+            "Password" : {
+              "displayName" : "Password",
+              "identifiesControllerService" : false,
+              "name" : "Password",
+              "sensitive" : true
+            }
+          },
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.elasticsearch.PutElasticsearchHttp",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ "failure", "unmatched" ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.11.4"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+          "identifier" : "71fd2c93-7bff-3fe5-b3c4-b80652319162",
+          "name" : "EvaluateJsonPath",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 2048.0,
+            "y" : 392.0
           },
           "properties" : {
             "Destination" : "flowfile-attribute",
@@ -575,6 +929,77 @@
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.standard.GetHTTP",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ "failure" ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.11.4"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "42c7c173-7373-3574-82d2-70346d1f16b7",
+          "identifier" : "ea9ad409-6b85-3adf-ba7d-f07b3edcb35b",
+          "name" : "JoltTransformJSON",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 2056.0,
+            "y" : 648.0
+          },
+          "properties" : {
+            "jolt-spec" : "[{\n  \"operation\": \"shift\",\n  \"spec\": {\n    \"timestamp\" : \"timestamp\",\n  \t\"last\" : \"last\",\n  \t\"volume\" : \"volume\"\n }\n},\n{\n  \"operation\": \"modify-overwrite-beta\",\n  \"spec\": {\n   \"timestamp\": \"${timestamp:append('000'):format('yyyy-MM-dd HH:mm:ss.SSS')}\"\n  }\n}\n]\n",
+            "jolt-transform" : "jolt-transform-chain",
+            "pretty_print" : "false",
+            "Transform Cache Size" : "1"
+          },
+          "propertyDescriptors" : {
+            "jolt-spec" : {
+              "displayName" : "Jolt Specification",
+              "identifiesControllerService" : false,
+              "name" : "jolt-spec",
+              "sensitive" : false
+            },
+            "jolt-transform" : {
+              "displayName" : "Jolt Transformation DSL",
+              "identifiesControllerService" : false,
+              "name" : "jolt-transform",
+              "sensitive" : false
+            },
+            "jolt-custom-class" : {
+              "displayName" : "Custom Transformation Class Name",
+              "identifiesControllerService" : false,
+              "name" : "jolt-custom-class",
+              "sensitive" : false
+            },
+            "jolt-custom-modules" : {
+              "displayName" : "Custom Module Directory",
+              "identifiesControllerService" : false,
+              "name" : "jolt-custom-modules",
+              "sensitive" : false
+            },
+            "pretty_print" : {
+              "displayName" : "Pretty Print",
+              "identifiesControllerService" : false,
+              "name" : "pretty_print",
+              "sensitive" : false
+            },
+            "Transform Cache Size" : {
+              "displayName" : "Transform Cache Size",
+              "identifiesControllerService" : false,
+              "name" : "Transform Cache Size",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.JoltTransformJSON",
           "yieldDuration" : "1 sec"
         }, {
           "autoTerminatedRelationships" : [ "success", "failure", "retry" ],
