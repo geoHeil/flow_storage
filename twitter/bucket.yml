@@ -1,5 +1,6 @@
 flows:
-  870a12f0-b709-4d40-862e-5dec5677495d: {ver: 2, file: twitter.snapshot, comments: avro
-      tweets, author: anonymous, created: 1593016648143, flowName: twitter, flowDesc: ''}
+  870a12f0-b709-4d40-862e-5dec5677495d: {ver: 3, file: twitter.snapshot, comments: use
+      confluent schema registry, author: anonymous, created: 1593021306932, flowName: twitter,
+    flowDesc: ''}
 layoutVer: 1
 bucketId: 1201a6bb-5259-40cc-b8ee-525a87be3460

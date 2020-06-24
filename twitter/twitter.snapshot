@@ -136,6 +136,36 @@
           "destination" : {
             "comments" : "",
             "groupId" : "5c1f929b-7eb4-3126-884d-5e87b6aa8b78",
+            "id" : "ae054ba5-1c37-3d8e-8cc1-70e98bf41bed",
+            "name" : "PublishKafkaRecord_2_0",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "5c1f929b-7eb4-3126-884d-5e87b6aa8b78",
+          "identifier" : "ad5706a3-5773-32de-a92e-ed698d9dbfd4",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "5c1f929b-7eb4-3126-884d-5e87b6aa8b78",
+            "id" : "47121d75-490a-3e07-944f-9bc28555b9b9",
+            "name" : "Funnel",
+            "type" : "FUNNEL"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "5c1f929b-7eb4-3126-884d-5e87b6aa8b78",
             "id" : "c9c57b4f-58ef-3a84-b80a-9013864219b8",
             "name" : "RouteOnAttribute",
             "type" : "PROCESSOR"
@@ -156,36 +186,6 @@
             "id" : "57815faf-79b5-3127-a1ca-684f58e92e33",
             "name" : "EvaluateJsonPath",
             "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "5c1f929b-7eb4-3126-884d-5e87b6aa8b78",
-            "id" : "50d4bb73-9ce4-3a23-bec8-8cb3c525f252",
-            "name" : "PutFile",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "5c1f929b-7eb4-3126-884d-5e87b6aa8b78",
-          "identifier" : "289bf56d-2bd2-3a0c-9eaa-f2b726656675",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "5c1f929b-7eb4-3126-884d-5e87b6aa8b78",
-            "id" : "47121d75-490a-3e07-944f-9bc28555b9b9",
-            "name" : "Funnel",
-            "type" : "FUNNEL"
           },
           "zIndex" : 0
         }, {
@@ -281,6 +281,77 @@
         } ],
         "controllerServices" : [ {
           "bundle" : {
+            "artifact" : "nifi-record-serialization-services-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.11.4"
+          },
+          "comments" : "",
+          "componentType" : "CONTROLLER_SERVICE",
+          "controllerServiceApis" : [ {
+            "bundle" : {
+              "artifact" : "nifi-standard-services-api-nar",
+              "group" : "org.apache.nifi",
+              "version" : "1.11.4"
+            },
+            "type" : "org.apache.nifi.serialization.RecordReaderFactory"
+          } ],
+          "groupIdentifier" : "5c1f929b-7eb4-3126-884d-5e87b6aa8b78",
+          "identifier" : "996c1593-fe04-30c1-9d59-0a17f3458580",
+          "name" : "TweetsAvroReader",
+          "properties" : {
+            "schema-name" : "${schema.name}",
+            "cache-size" : "1000",
+            "schema-registry" : "e20819fe-72bf-3a7d-b760-d64297acd87d",
+            "schema-access-strategy" : "confluent-encoded",
+            "schema-text" : "${avro.schema}"
+          },
+          "propertyDescriptors" : {
+            "schema-branch" : {
+              "displayName" : "Schema Branch",
+              "identifiesControllerService" : false,
+              "name" : "schema-branch",
+              "sensitive" : false
+            },
+            "schema-name" : {
+              "displayName" : "Schema Name",
+              "identifiesControllerService" : false,
+              "name" : "schema-name",
+              "sensitive" : false
+            },
+            "cache-size" : {
+              "displayName" : "Cache Size",
+              "identifiesControllerService" : false,
+              "name" : "cache-size",
+              "sensitive" : false
+            },
+            "schema-registry" : {
+              "displayName" : "Schema Registry",
+              "identifiesControllerService" : true,
+              "name" : "schema-registry",
+              "sensitive" : false
+            },
+            "schema-access-strategy" : {
+              "displayName" : "Schema Access Strategy",
+              "identifiesControllerService" : false,
+              "name" : "schema-access-strategy",
+              "sensitive" : false
+            },
+            "schema-version" : {
+              "displayName" : "Schema Version",
+              "identifiesControllerService" : false,
+              "name" : "schema-version",
+              "sensitive" : false
+            },
+            "schema-text" : {
+              "displayName" : "Schema Text",
+              "identifiesControllerService" : false,
+              "name" : "schema-text",
+              "sensitive" : false
+            }
+          },
+          "type" : "org.apache.nifi.avro.AvroReader"
+        }, {
+          "bundle" : {
             "artifact" : "nifi-registry-nar",
             "group" : "org.apache.nifi",
             "version" : "1.11.4"
@@ -338,13 +409,12 @@
           "name" : "TweetsAvroRecordSetWriter",
           "properties" : {
             "compression-format" : "NONE",
-            "Schema Write Strategy" : "schema-name",
+            "Schema Write Strategy" : "confluent-encoded",
             "schema-name" : "${schema.name}",
             "cache-size" : "1000",
-            "schema-registry" : "be5eace4-df13-386b-aeba-9ede5fb4466f",
+            "schema-registry" : "e20819fe-72bf-3a7d-b760-d64297acd87d",
             "schema-access-strategy" : "schema-name",
             "encoder-pool-size" : "32",
-            "schema-cache" : "ecb1e8eb-eb3d-3caf-ab1f-03e6212da2b8",
             "schema-text" : "${avro.schema}"
           },
           "propertyDescriptors" : {
@@ -583,9 +653,9 @@
           "identifier" : "1fca2d0e-14b1-369e-be19-a5dc5a630513",
           "name" : "TweetsJsonTreeReader",
           "properties" : {
-            "schema-inference-cache" : "ecb1e8eb-eb3d-3caf-ab1f-03e6212da2b8",
             "schema-name" : "${schema.name}",
-            "schema-access-strategy" : "infer-schema",
+            "schema-registry" : "e20819fe-72bf-3a7d-b760-d64297acd87d",
+            "schema-access-strategy" : "schema-name",
             "schema-text" : "${avro.schema}"
           },
           "propertyDescriptors" : {
@@ -1198,18 +1268,20 @@
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
           "groupIdentifier" : "5c1f929b-7eb4-3126-884d-5e87b6aa8b78",
-          "identifier" : "69f5f0f9-8e63-3556-b476-c0dd103309af",
-          "name" : "PublishKafka_2_0",
+          "identifier" : "ae054ba5-1c37-3d8e-8cc1-70e98bf41bed",
+          "name" : "PublishKafkaRecord_2_0",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 1840.0,
-            "y" : 1240.0
+            "x" : 1952.0,
+            "y" : 1120.0
           },
           "properties" : {
             "compression.type" : "none",
+            "record-writer" : "1549a174-5712-3004-bbd5-781ed90db6d8",
             "bootstrap.servers" : "broker:29092",
             "sasl.mechanism" : "GSSAPI",
             "max.block.ms" : "5 sec",
+            "record-reader" : "996c1593-fe04-30c1-9d59-0a17f3458580",
             "message-header-encoding" : "UTF-8",
             "ack.wait.time" : "5 secs",
             "use-transactions" : "false",
@@ -1218,8 +1290,7 @@
             "max.request.size" : "1 MB",
             "sasl.token.auth" : "false",
             "partitioner.class" : "org.apache.kafka.clients.producer.internals.DefaultPartitioner",
-            "topic" : "tweets-raw",
-            "key-attribute-encoding" : "utf-8"
+            "topic" : "tweets-raw"
           },
           "propertyDescriptors" : {
             "compression.type" : {
@@ -1232,6 +1303,12 @@
               "displayName" : "Attributes to Send as Headers (Regex)",
               "identifiesControllerService" : false,
               "name" : "attribute-name-regex",
+              "sensitive" : false
+            },
+            "record-writer" : {
+              "displayName" : "Record Writer",
+              "identifiesControllerService" : true,
+              "name" : "record-writer",
               "sensitive" : false
             },
             "bootstrap.servers" : {
@@ -1258,12 +1335,6 @@
               "name" : "kerberos-credentials-service",
               "sensitive" : false
             },
-            "kafka-key" : {
-              "displayName" : "Kafka Key",
-              "identifiesControllerService" : false,
-              "name" : "kafka-key",
-              "sensitive" : false
-            },
             "partition" : {
               "displayName" : "Partition",
               "identifiesControllerService" : false,
@@ -1282,16 +1353,16 @@
               "name" : "max.block.ms",
               "sensitive" : false
             },
+            "record-reader" : {
+              "displayName" : "Record Reader",
+              "identifiesControllerService" : true,
+              "name" : "record-reader",
+              "sensitive" : false
+            },
             "message-header-encoding" : {
               "displayName" : "Message Header Encoding",
               "identifiesControllerService" : false,
               "name" : "message-header-encoding",
-              "sensitive" : false
-            },
-            "message-demarcator" : {
-              "displayName" : "Message Demarcator",
-              "identifiesControllerService" : false,
-              "name" : "message-demarcator",
               "sensitive" : false
             },
             "transactional-id-prefix" : {
@@ -1348,6 +1419,12 @@
               "name" : "sasl.token.auth",
               "sensitive" : false
             },
+            "message-key-field" : {
+              "displayName" : "Message Key Field",
+              "identifiesControllerService" : false,
+              "name" : "message-key-field",
+              "sensitive" : false
+            },
             "partitioner.class" : {
               "displayName" : "Partitioner class",
               "identifiesControllerService" : false,
@@ -1371,12 +1448,6 @@
               "identifiesControllerService" : false,
               "name" : "sasl.password",
               "sensitive" : true
-            },
-            "key-attribute-encoding" : {
-              "displayName" : "Key Attribute Encoding",
-              "identifiesControllerService" : false,
-              "name" : "key-attribute-encoding",
-              "sensitive" : false
             }
           },
           "runDurationMillis" : 0,
@@ -1384,7 +1455,7 @@
           "schedulingPeriod" : "0 sec",
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
-          "type" : "org.apache.nifi.processors.kafka.pubsub.PublishKafka_2_0",
+          "type" : "org.apache.nifi.processors.kafka.pubsub.PublishKafkaRecord_2_0",
           "yieldDuration" : "1 sec"
         }, {
           "autoTerminatedRelationships" : [ "success", "failure" ],
@@ -1838,7 +1909,7 @@
           "properties" : {
             "Store State" : "Do not store state",
             "canonical-value-lookup-cache-size" : "100",
-            "schema.name" : "tweets"
+            "schema.name" : "tweets-raw-value"
           },
           "propertyDescriptors" : {
             "Delete Attributes Expression" : {
