@@ -1,6 +1,6 @@
 flows:
-  32f653c2-64c5-4715-98a7-8c2ef55eb85a: {ver: 8, file: bitcoin.snapshot, comments: add
-      one non-handled one, author: anonymous, created: 1592484440429, flowName: bitcoin,
+  32f653c2-64c5-4715-98a7-8c2ef55eb85a: {ver: 9, file: bitcoin.snapshot, comments: fix
+      timestamp for elastic, author: anonymous, created: 1594068114076, flowName: bitcoin,
     flowDesc: ''}
 layoutVer: 1
 bucketId: 9029a458-96bb-484f-854b-bf34b0c5b4da
