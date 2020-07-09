@@ -1,6 +1,6 @@
 flows:
-  870a12f0-b709-4d40-862e-5dec5677495d: {ver: 4, file: twitter.snapshot, comments: additionally
-      generate JSON stream, author: anonymous, created: 1593960903135, flowName: twitter,
+  870a12f0-b709-4d40-862e-5dec5677495d: {ver: 5, file: twitter.snapshot, comments: add
+      notice for schema and topic, author: anonymous, created: 1594296285819, flowName: twitter,
     flowDesc: ''}
 layoutVer: 1
 bucketId: 1201a6bb-5259-40cc-b8ee-525a87be3460

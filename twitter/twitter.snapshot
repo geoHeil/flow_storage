@@ -1331,6 +1331,20 @@
         }, {
           "componentType" : "LABEL",
           "groupIdentifier" : "5c1f929b-7eb4-3126-884d-5e87b6aa8b78",
+          "height" : 56.0,
+          "identifier" : "c4be30e7-b4c4-37cc-8ef5-c06d6e97a371",
+          "label" : "Notice how here the schema must be first registered in the schema registry!\n\nAlso the kafka topics must be created - otherwise the job will error out",
+          "position" : {
+            "x" : 2656.0,
+            "y" : 664.0
+          },
+          "style" : {
+            "font-size" : "12px"
+          },
+          "width" : 432.0
+        }, {
+          "componentType" : "LABEL",
+          "groupIdentifier" : "5c1f929b-7eb4-3126-884d-5e87b6aa8b78",
           "height" : 736.0,
           "identifier" : "1ca8fad2-533f-30e2-9ef9-b4916908f029",
           "label" : "similar filter using the schema of record from the API. \n\nFirst, the schema is inferred (i.e. too lazy to define it all by hand)",
@@ -2392,11 +2406,11 @@
             "sensitive" : true
           }, {
             "description" : "",
-            "name" : "access_token",
+            "name" : "consumer_key",
             "sensitive" : true
           }, {
             "description" : "",
-            "name" : "consumer_key",
+            "name" : "access_token",
             "sensitive" : true
           }, {
             "description" : "",
